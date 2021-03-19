@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>square root of the number</title>
+    </head>
+    <body style= backgound-color:skyblue>
+        Enter Value : <input id="number">
+        <button onclick="squareRoot()">SQUARE</button>
+        <input type="text" id="answer">
+
+        <script type="text/javascript">
+        function squareRoot(){
+            var num=document.getElementById("number").value;
+            var result=num*num;
+            document.getElementById("answer").value=result;
+        }
+        </script>
+    </body>
+</html>

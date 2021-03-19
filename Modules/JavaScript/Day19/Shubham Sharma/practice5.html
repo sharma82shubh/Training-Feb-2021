@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+//Function closure 
+JavaScript variables can belong to the local or global scope.
+
+Global variables can be made local (private) with closures.
+<p>A function can access variables defined inside the function:</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var a = 4;
+  document.getElementById("demo").innerHTML = a * a;
+} 
+
+</script>
+
+</body>
+</html>

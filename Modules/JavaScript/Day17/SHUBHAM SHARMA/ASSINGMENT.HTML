@@ -45,7 +45,7 @@ function validate()
                     Name:
                 </td>
                 <td>
-                <input onclick="validate(txtName,txtAddress,error)" type="text" list="mydatalist">
+                <input onclick="validate(txtName,txtAddress,error)" type="text" list="mydatalist" required>
                     <datalist id="mydatalist">
                         <option label="Mr." value="Mr."></option>
                         <option label="Mrs." value="Mrs."></option>
@@ -67,8 +67,8 @@ function validate()
                     Gender:
                 </td>
                 <td>
-                    <input type="radio" name="Gender">Male
-                    <input type="radio" name="Gender">FeMale
+                    <input type="radio" name="Gender" required>Male
+                    <input type="radio" name="Gender"required>FeMale
                 </td>
             </tr>
             <tr>
@@ -114,7 +114,7 @@ function validate()
                     Email id:
                 </td>
                 <td>
-                    <input type="email" placeholder="example(abc.ek@yms.com)" name="">
+                    <input type="email" placeholder="example(abc.ek@yms.com)" name="" required>
                 </td>
             </tr>
             <tr>
@@ -123,7 +123,7 @@ function validate()
                 </td>
                 <td>
                     
-                    <input type="date" placeholder="dd/mm/yy">
+                    <input type="date" placeholder="dd/mm/yy" required>
                 </td>
             </tr>
             <tr>
@@ -131,7 +131,7 @@ function validate()
                     Department:
                 </td>
                 <td>
-                    <input type="text" placeholder="Department" name="">
+                    <input type="text" placeholder="Department" name=""required>
                 </td>
             </tr>
             <tr>

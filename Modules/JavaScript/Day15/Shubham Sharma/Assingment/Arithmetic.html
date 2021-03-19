@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Arithemetic operations</title>
+        <style text="text/css">
+     #p{
+        font-size: 220px;
+        margin-left: 550px;
+    }
+    </style>
+    <script type="text/javascript">
+    function add()
+    {
+        var a=document.getElementById('txt1').value;
+        var b=document.getElementById('txt2').value;
+        var c= +a + +b;
+        document.getElementById("p").innerHTML=c;
+        return false
+    }
+    
+    function sub()
+    {
+        var a=document.getElementById('txt1').value;
+        var b=document.getElementById('txt2').value;
+        var c=+a - +b;
+        document.getElementById("p").innerHTML=c;
+        return false
+    }
+    
+    function mul()
+    {
+        var a=document.getElementById('txt1').value;
+        var b=document.getElementById('txt2').value;
+        var c=+a  * +b;
+        document.getElementById("p").innerHTML=c;
+        return false
+    }
+    
+    function div()
+    {
+        var a=document.getElementById('txt1').value;
+        var b=document.getElementById('txt2').value;
+        var c=+a / +b;
+        document.getElementById("p").innerHTML=c;
+        return false
+    }
+
+    </script>
+    </head>
+    <body>
+        <input type="text" placeholder="Enter number" id="txt1" name="">
+        <br>
+        <br>
+        <input type="text" placeholder="Enter number" id="txt2" name="">
+        <br>
+        <br>
+        <input type="button" value="ADD" onclick="return add()"name="">
+        <input type="button" value="SUB" onclick=" return sub()"name="">
+        <input type="button" value="MUL" onclick=" return mul()"name="">
+        <input type="button" value="DIV" onclick=" return div()"name="">
+        <p id="p"></p>
+    </body>
+</html>

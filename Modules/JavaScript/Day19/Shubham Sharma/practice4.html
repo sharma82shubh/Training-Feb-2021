@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example creates an object with 3 properties (feildName, address, designation).</p>
+<p>The Employee property is a method:</p> 
+
+<p id="demo"></p>
+
+<script>
+var myObject = {
+  feildName:"PHP",
+  address: "xyz",
+  designation: "Developer",
+  Employee: function() {
+    return this.feildName + " " + this.address + " " + this.designation;
+  }
+}
+x = myObject.Employee();
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+</body>
+</html>
